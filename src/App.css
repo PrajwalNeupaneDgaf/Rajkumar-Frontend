@@ -1,0 +1,148 @@
+/* Hover Effect for Navbar Items */
+.navbars:hover {
+    color: rgb(0, 158, 158);
+    text-shadow: 0px 0px 30px aqua, 0px 0px 30px green, 0px 0px 30px rgb(0, 81, 128);
+    transform: scale(1.1); /* Updated to transform */
+  }
+.navbarActive {
+    border-bottom: 2px solid rgb(0, 68, 255);
+  }
+
+  .text-bright {
+    color: yellow; /* Highlight color */
+    font-weight: bold; /* Optional: Make it bolder */
+    text-decoration: underline; /* Optional: Add an underline */
+  }
+
+  .mainBox::-webkit-scrollbar{
+    display: none;
+  }
+  
+  /* Navbar Base Styles */
+  .navbars {
+    transition: all 0.3s ease;
+    color: transparent;
+    background-clip: text;
+    background-image: url(https://images.creativemarket.com/0.1.0/ps/1582215/1360/906/m1/fpnw/wm1/upjtsnm9ebyqkt6xgtv8wmuit4grypvwggygu1hwwudiyj9p4mawpnzz2dv9fhkz-.jpg?1471938880&s=4c21f3fa01e804dc68e5f51dace10953);
+  }
+
+  .fire {
+    background-image: url(https://media.giphy.com/media/19Z7rpzllZY8o/giphy.gif);
+    background-size: cover; /* Ensures the GIF covers the entire element */
+    background-position: center; /* Centers the GIF within the element */
+    background-clip: text;
+    color: transparent;
+ 
+  }
+  
+ .namebelow{
+ animation: blinker infinite 3s;
+ }
+
+ @keyframes blinker {
+  0%{
+    text-shadow:  0 0 10px cyan;
+  }
+  50%{
+    text-shadow:  0 0 50px rgb(5, 94, 129);
+    color: rgb(12, 12, 170);
+  }
+  100%{
+    text-shadow:  0 0 10px cyan;
+  }
+  
+ }
+/* Music bar animation */
+@keyframes musicPulse {
+  0% {
+    height: 9px;
+  }
+  50% {
+    height: 36px;
+  }
+  100% {
+    height: 9px;
+  }
+}
+
+/* Music playing active class to toggle animation */
+.music-playing .music-bar {
+  animation: musicPulse 0.5s ease-in-out infinite;
+}
+
+/* Adding a delay for each bar's animation to animate one by one */
+.music-playing .music-bar:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.music-playing .music-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.music-playing .music-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.music-playing .music-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.music-playing .music-bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.music-playing .music-bar:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.music-playing .music-bar:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.music-playing .music-bar:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.music-playing .music-bar:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.music-playing{
+  animation: popSong infinite 1s ;
+}
+
+@keyframes popSong {
+  0%{
+    box-shadow: 0 0 50px cyan;
+    scale: .8;
+  }
+  50%{
+    box-shadow: 0 0 10px cyan;
+    scale: 1.1;
+  }
+  100%{
+    box-shadow: 0 0 50px cyan;
+    scale: .8;
+  }
+}
+
+.AboutHeading{
+  text-shadow: 10px 10px 10px black , 10px 10px 50px cyan ,10px 10px 45px blue , 10px 10px 40px red;
+ &:hover{
+  animation: lightening  4s;
+ }
+}
+
+@keyframes lightening{
+  0%{
+    text-shadow: 10px 10px 10px black , 10px 10px 50px cyan ,10px 10px 45px blue , 10px 10px 40px red;
+  }
+  50%{
+    text-shadow: -10px -10px 10px black , 0 0 50px cyan ,0 0 45px blue , 1px 1px 40px red;
+  }
+  0%{
+    text-shadow: 10px 10px 10px black , 10px 10px 50px cyan ,10px 10px 45px blue , 10px 10px 40px red;
+  }
+}
+
+#Home{
+ background: linear-gradient(rgb(156, 185, 183) , rgb(93, 148, 148) , black);
+}
